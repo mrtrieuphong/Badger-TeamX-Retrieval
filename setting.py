@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 import pandas as pd
-from CLIP import clip
+from CLIP.clip import clip
 from PyQt5.QtCore import QSize
 
 ICON_SIZE = 130
