@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Nguyen"
+  given-names: "Trieu Phong"
+title: "An official open-source Image/Video retrieval engine, developed by Badger Team X in AI Challenge 2022"
+url: "https://github.com/mrtrieuphong/Badger-TeamX-Retrieval"
+license: GPL-3
