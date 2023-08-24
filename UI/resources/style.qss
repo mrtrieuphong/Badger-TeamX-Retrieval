@@ -1,0 +1,232 @@
+/*
+ * QGroupBox
+ */
+
+QGroupBox {
+  background-color: palette(alternate-base);
+  border: 1px solid palette(midlight);
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+QGroupBox::title {
+    background-color: transparent;
+}
+
+/*
+ * QToolBar
+ */
+
+QToolBar {
+  border: none;
+}
+
+/*
+ * QTabBar
+ */
+
+QTabBar{
+  background-color: transparent;
+}
+
+QTabBar::tab{
+  padding: 4px 6px;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+  color: palette(text);
+  border-bottom: 2px solid darkorange;
+}
+
+QTabBar::tab:selected:disabled {
+  border-bottom: 2px solid orange;
+}
+
+QTabBar::close-button {
+  border-radius: 7px;
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: darkorange;
+}
+
+QTabBar::close-button:hover {
+  border-radius: 7px;
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: red;
+}
+
+/*
+ * QScrollBar
+ */
+
+QScrollBar:vertical {
+  background: palette(base);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 16px;
+  margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+  background-color: palette(midlight);
+  border-radius: 2px;
+  min-height: 20px;
+  margin: 2px 4px 2px 4px;
+}
+
+QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover, QScrollBar::handle:vertical:pressed, QScrollBar::handle:horizontal:pressed {
+  background-color: orange;
+}
+
+QScrollBar::add-line:vertical {
+  background: none;
+  height: 0px;
+  subcontrol-position: right;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+  background: none;
+  height: 0px;
+  subcontrol-position: left;
+  subcontrol-origin: margin;
+}
+
+QScrollBar:horizontal{
+  background: palette(base);
+  height: 16px;
+  margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+  background-color: palette(midlight);
+  border-radius: 2px;
+  min-width: 20px;
+  margin: 4px 2px 4px 2px;
+}
+
+
+QScrollBar::add-line:horizontal {
+  background: none;
+  width: 0px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+  background: none;
+  width: 0px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+}
+
+/*
+ * QScrollArea
+ */
+
+QScrollArea {
+  border-style: none;
+}
+
+QScrollArea > QWidget > QWidget {
+  background-color: palette(alternate-base);
+}
+
+/*
+ * QSlider
+ */
+QSlider::groove:horizontal {
+border: none;
+background: white;
+height: 2px;
+border-radius: 5px;
+}
+
+QSlider::handle:horizontal {
+background: darkorange;
+border: none;
+width: 25px;
+margin-top: -3px;
+margin-bottom: -3px;
+border-radius: 2px;
+}
+
+QSlider::handle:horizontal:hover {
+background: palette(base);
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+  background: palette(base);
+}
+
+QSlider::sub-page:horizontal {
+  background: orangered;
+}
+
+QSlider::sub-page:horizontal:disabled {
+  background-color: orange;
+}
+
+QTableView {
+  background-color: palette(link-visited);
+  alternate-background-color: palette(midlight);
+}
+
+QListWidget::item {
+    /* Won't work without borders set */
+    border: 0;
+    padding: 10px;
+}
+
+QListWidget::item:hover {
+    background-color: silver;
+    border-radius: 3px;
+    margin-top: 3px;
+    color: black;
+}
+
+QListWidget::item:selected {
+    border-radius: 3px;
+    background-color: orange;
+    color: black;
+}
+
+QListWidget#tagView {
+	background-color: palette(alternate-base);
+    border: none;
+}
+
+QListWidget#tagView::item {
+    /* Won't work without borders set */
+    border: 0;
+    border-radius: 3px;
+    margin: 1px;
+    padding: 3px;
+    background-color: orange;
+    color: black;
+}
+
+QListWidget#tagView::item:hover {
+    /* Won't work without borders set */
+    border: 0;
+    border-radius: 3px;
+    margin: 1px;
+    background-color: red;
+    color: black;
+}
+
+QPushButton:disabled {
+    background-color: palette(dark);
+}
+
